@@ -162,3 +162,7 @@ C:\Users\Admin\Documents\cliniquedentaire\Projetcliniquemedical\obj\Debug\Projet
 C:\Users\Admin\Documents\cliniquedentaire\Projetcliniquemedical\obj\Debug\Projetcliniquemedical.csproj.CopyComplete
 C:\Users\Admin\Documents\cliniquedentaire\Projetcliniquemedical\obj\Debug\Projetcliniquemedical.dll
 C:\Users\Admin\Documents\cliniquedentaire\Projetcliniquemedical\obj\Debug\Projetcliniquemedical.pdb
+C:\Users\Admin\Documents\cliniquedentaire\Projetcliniquemedical\bin\EntityFramework.dll
+C:\Users\Admin\Documents\cliniquedentaire\Projetcliniquemedical\bin\EntityFramework.SqlServer.dll
+C:\Users\Admin\Documents\cliniquedentaire\Projetcliniquemedical\bin\EntityFramework.xml
+C:\Users\Admin\Documents\cliniquedentaire\Projetcliniquemedical\bin\EntityFramework.SqlServer.xml

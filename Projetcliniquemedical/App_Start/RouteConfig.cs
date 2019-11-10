@@ -24,8 +24,15 @@ namespace Projetcliniquemedical
               defaults: new { controller = "Home", action = "Connecter", id = UrlParameter.Optional }
 
           );
-           
-           
+            routes.MapRoute(
+             name: "Login",
+             url: "{controller}/{action}",
+
+             defaults: new { controller = "Account", action = "Login", id = UrlParameter.Optional }
+
+         );
+
+
 
 
         }
