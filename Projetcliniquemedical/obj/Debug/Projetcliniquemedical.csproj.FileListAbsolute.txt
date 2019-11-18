@@ -166,3 +166,8 @@ C:\Users\Admin\Documents\cliniquedentaire\Projetcliniquemedical\bin\EntityFramew
 C:\Users\Admin\Documents\cliniquedentaire\Projetcliniquemedical\bin\EntityFramework.SqlServer.dll
 C:\Users\Admin\Documents\cliniquedentaire\Projetcliniquemedical\bin\EntityFramework.xml
 C:\Users\Admin\Documents\cliniquedentaire\Projetcliniquemedical\bin\EntityFramework.SqlServer.xml
+C:\Users\Admin\Documents\cliniquedentaire\Projetcliniquemedical\bin\fr\EntityFramework.resources.dll
+C:\Users\Admin\Documents\cliniquedentaire\Projetcliniquemedical\bin\fr\EntityFramework.SqlServer.resources.dll
+C:\Users\Admin\Documents\cliniquedentaire\Projetcliniquemedical\obj\Debug\Projetcliniquemedical.Migrations.mig1.resources
+C:\Users\Admin\Documents\cliniquedentaire\Projetcliniquemedical\obj\Debug\Projetcliniquemedical.csproj.GenerateResource.cache
+C:\Users\Admin\Documents\cliniquedentaire\Projetcliniquemedical\obj\Debug\Projetcliniquemedical.Migrations.mig11.resources

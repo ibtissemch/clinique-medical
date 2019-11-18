@@ -25,12 +25,20 @@ namespace Projetcliniquemedical.Controllers
         {
             using(OurDbContext db =new OurDbContext())
             {
-                var usr = db.userAccount.Single(u => u.Email == user.Email && u.Password == user.Password);
+                var usr = db.userAccount.Single(u => u.Email == user.Email && u.Password == user.Password && u.Type==user.Type);
                 if(usr != null)
                 {
                     Session["UserID"] = usr.UserID.ToString();
                     Session["Email"] = usr.Email.ToString();
-                    return RedirectToAction("LoggedIn");
+                    if(usr.Type.ToString()== "medecin")
+                    {
+                        return RedirectToAction("Dentiste");
+                    }
+                    else
+                    {
+                        return RedirectToAction("LoggedIn");
+                    }
+                    
                 }
                 else
                 {
@@ -50,6 +58,14 @@ namespace Projetcliniquemedical.Controllers
             {
                 return RedirectToAction("Login");
             }
+        }
+
+        public ActionResult Dentiste()
+        {
+           
+                return View();
+            
+           
         }
     }
 }

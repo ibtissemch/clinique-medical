@@ -1,0 +1,62 @@
+﻿@model IEnumerable<Projetcliniquemedical.Models.Rdv>
+
+@{
+    ViewBag.Title = "RendezVous";
+   
+  
+}
+
+    <h2> Votre Liste Des Rendez Vous pour le @DateTime.Now</h2>
+
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr> @ViewBag.Userid</tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Medecin.MedecinNom)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Patient.PatientNom)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Hdebut)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Hfin)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Medecin.MedecinNom)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Patient.PatientNom)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Date)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Hdebut)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Hfin)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.RdvID }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.RdvID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.RdvID })
+                </td>
+            </tr>
+        }
+
+    </table>
+ 
