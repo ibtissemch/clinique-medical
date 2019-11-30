@@ -530,8 +530,8 @@
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Account\Dentiste.cshtml" />
     <Content Include="Views\Rdv\RendezVous.cshtml" />
-    <Content Include="Views\Shared\RendezVous2.cshtml" />
-    <Content Include="Views\Shared\Rendez_Vous.cshtml" />
+    <Content Include="Views\Rdv\RendezVous2.cshtml" />
+    <Content Include="Views\Shared\_layoutdash.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

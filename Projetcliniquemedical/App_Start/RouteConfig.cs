@@ -32,13 +32,7 @@ namespace Projetcliniquemedical
 
          );
 
-            routes.MapRoute(
-                 name: "RendezVous",
-                 url: "{controller}/{action}",
-
-                 defaults: new { controller = "Rdv", action = "RendezVous", id = UrlParameter.Optional }
-
-             );
+          
            
 
 

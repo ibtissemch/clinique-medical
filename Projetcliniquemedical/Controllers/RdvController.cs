@@ -20,5 +20,14 @@ namespace Projetcliniquemedical.Controllers
             var data = db.rdv.ToList();
             return View(data);
         }
+        public ActionResult RendezVous2()
+        {
+            ViewBag.Userid = Session["UserID"];
+
+            ViewBag.rdv = db.rdv.ToList();
+          
+
+            return View(ViewBag.rdv);
+        }
     }
 }
