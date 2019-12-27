@@ -14,11 +14,17 @@ namespace Projetcliniquemedical.Models
 
         public string MedecinNom { get; set; }
 
+        public string MedecinPrenom { get; set; }
+
+
 
         [Required]
         public int? UserID { get; set; }
         [ForeignKey("UserID")]
-        public virtual UserAccount UserAccount { get; set; }
+        public virtual User UserAccount { get; set; }
 
+        public int? ServiceID { get; set; }
+        [ForeignKey("ServiceID")]
+        public virtual Service ServiceAccount { get; set; }
     }
 }

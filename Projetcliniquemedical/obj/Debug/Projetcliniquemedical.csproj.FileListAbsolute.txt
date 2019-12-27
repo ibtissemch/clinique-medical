@@ -171,3 +171,5 @@ C:\Users\Admin\Documents\cliniquedentaire\Projetcliniquemedical\bin\fr\EntityFra
 C:\Users\Admin\Documents\cliniquedentaire\Projetcliniquemedical\obj\Debug\Projetcliniquemedical.Migrations.mig1.resources
 C:\Users\Admin\Documents\cliniquedentaire\Projetcliniquemedical\obj\Debug\Projetcliniquemedical.csproj.GenerateResource.cache
 C:\Users\Admin\Documents\cliniquedentaire\Projetcliniquemedical\obj\Debug\Projetcliniquemedical.Migrations.mig11.resources
+C:\Users\Admin\Documents\cliniquedentaire\Projetcliniquemedical\bin\System.Net.Http.Formatting.dll
+C:\Users\Admin\Documents\cliniquedentaire\Projetcliniquemedical\bin\System.Net.Http.Formatting.xml

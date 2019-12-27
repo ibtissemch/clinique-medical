@@ -9,18 +9,22 @@ namespace Projetcliniquemedical.Models
 {
     public class Patient
     {
-
         [Key]
         public int PatientID { get; set; }
 
-        public string  PatientNom { get; set; }
+        public string Nom { get; set; }
+
+        public string Prenom { get; set; }
+
+        public string Adresse { get; set; }
+
 
         [Required]
         public int? UserID { get; set; }
         [ForeignKey("UserID")]
-        public virtual UserAccount UserAccount { get; set; }
+        public virtual User UserAccount { get; set; }
 
-     
+
 
 
 

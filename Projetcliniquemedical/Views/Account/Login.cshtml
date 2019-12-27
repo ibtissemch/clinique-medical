@@ -1,4 +1,4 @@
-﻿@model Projetcliniquemedical.Models.UserAccount
+﻿@model Projetcliniquemedical.Models.User
 
 @{
     ViewBag.Title = "Login";
@@ -51,7 +51,7 @@
                         </div>
                     </div>
 
-                    <div class="wrap-input100 validate-input m-b-20">
+                    <div class="wrap-input100 ">
                         @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-2" })
                         <div class="col-md-10">
                             @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control" } })

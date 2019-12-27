@@ -21,7 +21,7 @@ namespace Projetcliniquemedical.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult Login(UserAccount user)
+        public ActionResult Login(User user)
         {
             using(OurDbContext db =new OurDbContext())
             {
