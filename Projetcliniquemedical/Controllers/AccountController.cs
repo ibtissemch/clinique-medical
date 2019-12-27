@@ -34,6 +34,10 @@ namespace Projetcliniquemedical.Controllers
                     {
                         return RedirectToAction("Dentiste");
                     }
+                    if (usr.Type.ToString() == "admin")
+                    {
+                        return RedirectToAction("Admin");
+                    }
                     else
                     {
                         return RedirectToAction("LoggedIn");
@@ -62,10 +66,12 @@ namespace Projetcliniquemedical.Controllers
 
         public ActionResult Dentiste()
         {
-           
                 return View();
-            
-           
+        }
+
+        public ActionResult Admin()
+        {
+            return View();
         }
     }
 }

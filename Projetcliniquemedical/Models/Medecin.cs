@@ -25,6 +25,6 @@ namespace Projetcliniquemedical.Models
 
         public int? ServiceID { get; set; }
         [ForeignKey("ServiceID")]
-        public virtual Service ServiceAccount { get; set; }
+        public virtual Service ServicesAccount { get; set; }
     }
 }

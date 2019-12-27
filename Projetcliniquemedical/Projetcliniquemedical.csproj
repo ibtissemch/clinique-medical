@@ -137,7 +137,9 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MedecinsController.cs" />
     <Compile Include="Controllers\RdvController.cs" />
+    <Compile Include="Controllers\ServicesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -541,6 +543,18 @@
     <Content Include="Views\Rdv\RendezVous.cshtml" />
     <Content Include="Views\Rdv\RendezVous2.cshtml" />
     <Content Include="Views\Shared\_layoutdash.cshtml" />
+    <Content Include="Views\Account\Admin.cshtml" />
+    <Content Include="Views\Shared\_Layoutadmin.cshtml" />
+    <Content Include="Views\Medecins\Create.cshtml" />
+    <Content Include="Views\Medecins\Delete.cshtml" />
+    <Content Include="Views\Medecins\Details.cshtml" />
+    <Content Include="Views\Medecins\Edit.cshtml" />
+    <Content Include="Views\Medecins\Index.cshtml" />
+    <Content Include="Views\Services\Create.cshtml" />
+    <Content Include="Views\Services\Delete.cshtml" />
+    <Content Include="Views\Services\Details.cshtml" />
+    <Content Include="Views\Services\Edit.cshtml" />
+    <Content Include="Views\Services\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

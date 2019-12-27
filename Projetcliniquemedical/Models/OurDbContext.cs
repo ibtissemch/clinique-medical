@@ -17,7 +17,7 @@ namespace Projetcliniquemedical.Models
         public DbSet<User> userAccount { get; set; }
         public DbSet<Rdv> rdv { get; set; }
         public DbSet<Patient> patient{ get; set; }
-        public DbSet<Medecin> medecin { get; set; }
-        public DbSet<Service> service { get; set; }
+        public DbSet<Medecin> Medecins { get; set; }
+        public DbSet<Service> Services { get; set; }
     }
 }

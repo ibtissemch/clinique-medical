@@ -1,0 +1,54 @@
+﻿@model IEnumerable<Projetcliniquemedical.Models.Medecin>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layoutadmin.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ServicesAccount.ServiceNom)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserAccount.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MedecinNom)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MedecinPrenom)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ServicesAccount.ServiceNom)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserAccount.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MedecinNom)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MedecinPrenom)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.MedecinID }) |
+                @Html.ActionLink("Details", "Details", new { id = item.MedecinID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.MedecinID })
+            </td>
+        </tr>
+    }
+
+</table>
+

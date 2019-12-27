@@ -1,0 +1,51 @@
+﻿@model Projetcliniquemedical.Models.Medecin
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layoutadmin.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Medecin</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ServicesAccount.ServiceNom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ServicesAccount.ServiceNom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserAccount.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserAccount.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MedecinNom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MedecinNom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MedecinPrenom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MedecinPrenom)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MedecinID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
