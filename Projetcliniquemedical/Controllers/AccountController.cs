@@ -38,6 +38,10 @@ namespace Projetcliniquemedical.Controllers
                     {
                         return RedirectToAction("Admin");
                     }
+                    if (usr.Type.ToString() == "patient")
+                    {
+                        return RedirectToAction("Patient");
+                    }
                     else
                     {
                         return RedirectToAction("LoggedIn");
@@ -70,6 +74,11 @@ namespace Projetcliniquemedical.Controllers
         }
 
         public ActionResult Admin()
+        {
+            return View();
+        }
+
+        public ActionResult Patient()
         {
             return View();
         }

@@ -136,8 +136,11 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ContactEmailController.cs" />
+    <Compile Include="Controllers\DemandeRdvController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MedecinsController.cs" />
+    <Compile Include="Controllers\PatientController.cs" />
     <Compile Include="Controllers\RdvController.cs" />
     <Compile Include="Controllers\ServicesController.cs" />
     <Compile Include="Global.asax.cs">
@@ -176,6 +179,11 @@
     <Content Include="Content\cssdashmed\table-responsive.css" />
     <Content Include="Content\cssdashmed\to-do.css" />
     <Content Include="Content\cssdashmed\zabuto_calendar.css" />
+    <Content Include="Content\cssdashpat\style-responsive.css" />
+    <Content Include="Content\cssdashpat\style.css" />
+    <Content Include="Content\cssdashpat\table-responsive.css" />
+    <Content Include="Content\cssdashpat\to-do.css" />
+    <Content Include="Content\cssdashpat\zabuto_calendar.css" />
     <Content Include="Content\css\animate.css" />
     <Content Include="Content\css\bootstrap.min.css" />
     <Content Include="Content\css\flaticon.css" />
@@ -555,6 +563,10 @@
     <Content Include="Views\Services\Details.cshtml" />
     <Content Include="Views\Services\Edit.cshtml" />
     <Content Include="Views\Services\Index.cshtml" />
+    <Content Include="Views\Shared\_layoutpatient.cshtml" />
+    <Content Include="Views\Account\Patient.cshtml" />
+    <Content Include="Views\ContactEmail\Form.cshtml" />
+    <Content Include="Views\DemandeRdv\DemandeForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
