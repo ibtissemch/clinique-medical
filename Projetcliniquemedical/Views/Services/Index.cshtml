@@ -5,30 +5,42 @@
     Layout = "~/Views/Shared/_Layoutadmin.cshtml";
 }
 
-<h2>Index</h2>
+<h2 style="color:black">Liste des services</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Créer nouveau service", "Create", null, new { Class = "btn btn-primary " })
 </p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.ServiceNom)
-        </th>
-        <th></th>
-    </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.ServiceNom)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ServiceID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ServiceID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ServiceID })
-        </td>
-    </tr>
-}
+<div class="row mb">
+    <div class="content-panel">
+        <div class="adv-table">
+            <div class="col-lg-12">
+                <table cellpadding="0" cellspacing="0" border="0" class="display table table-bordered " id="hidden-table-info">
+                <thead>
+                <th>
+                    @Html.DisplayNameFor(model => model.ServiceNom)
+                </th>
+                <th>Actions</th>
+                </thead>
 
-</table>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.ServiceNom)
+                            </td>
+                            <td>
+                                @Html.ActionLink("Details", "Details", new { id = item.ServiceID }, new { Class = "btn btn-primary btn-xs fa fa-eye" }) |
+                                @Html.ActionLink("Edit", "Edit", new { id = item.ServiceID }, new { Class = "btn btn-success btn-xs fa fa-pencil" }) |
+                                @Html.ActionLink("Delete", "Delete", new { id = item.ServiceID }, new { Class = "btn btn-danger btn-xs fa fa-trash-o" })
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+
+            </table>
+            </div>
+        </div>
+    </div>
+</div>

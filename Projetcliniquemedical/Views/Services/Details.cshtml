@@ -5,23 +5,27 @@
     Layout = "~/Views/Shared/_Layoutadmin.cshtml";
 }
 
-<h2>Details</h2>
+<h2 style="color:black">Details service</h2>
 
-<div>
-    <h4>Service</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.ServiceNom)
-        </dt>
+<div class="content-panel">
+    <div class="panel-body">
+        <h4 style="color:darkslateblue">Service</h4>
+        <hr />
 
-        <dd>
-            @Html.DisplayFor(model => model.ServiceNom)
-        </dd>
+        <dl class="dl-horizontal">
+            <div class="row col-lg-12">
+                <dt style="color:darkslateblue" class="col-lg-2">
+                    @Html.DisplayNameFor(model => model.ServiceNom)
+                </dt>
 
-    </dl>
+                <dd style="color:black" class="col-lg-4">
+                    @Html.DisplayFor(model => model.ServiceNom)
+                </dd>
+            </div>
+        </dl>
+        <p class="col-lg-4">
+            @Html.ActionLink("Edit", "Edit", new { id = Model.ServiceID },new { Class = "btn  btn-success" }) |
+            @Html.ActionLink("Back to List", "Index")
+        </p>
+    </div>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ServiceID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
