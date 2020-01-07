@@ -44,7 +44,7 @@
             <!--logo start-->
             <a href="index.html" class="logo"><b>Clinique Dentaire<span> Monastir</span></b></a>
             <!--logo end-->
-           
+
             <div class="top-menu">
                 <ul class="nav pull-right top-menu">
                     <li style="margin-top:21px"><a class="logout" href="/">Logout</a></li>
@@ -71,7 +71,7 @@
                     <li class="mt">
                         <a href="/Medecins/Index">
                             <i class="fa fa-user"></i>
-                            <span>Liste Medecins</span> 
+                            <span>Liste Medecins</span>
                         </a>
                     </li>
                     <li class="mt">
@@ -151,38 +151,42 @@
     </script>
 
     <!--script for data table-->
-      <script type="text/javascript">
-            /* Formating function for row details */
-            function fnFormatDetails(oTable, nTr) {
-                var aData = oTable.fnGetData(nTr);
-                var sOut = '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;" >';
-                sOut += '<tr><td>Rendering engine:</td><td>' + aData[1] + ' ' + aData[4] + '</td></tr>';
-                sOut += '<tr><td>Link to source:</td><td>Could provide a link here</td></tr>';
-                sOut += '<tr><td>Extra info:</td><td>And any further details here (images etc)</td></tr>';
-                sOut += '</table>';
+    <script type="text/javascript">
+        /* Formating function for row details */
+        function fnFormatDetails(oTable, nTr) {
+            var aData = oTable.fnGetData(nTr);
+            var sOut = '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;" >';
+            sOut += '<tr><td>Rendering engine:</td><td>' + aData[1] + ' ' + aData[4] + '</td></tr>';
+            sOut += '<tr><td>Link to source:</td><td>Could provide a link here</td></tr>';
+            sOut += '<tr><td>Extra info:</td><td>And any further details here (images etc)</td></tr>';
+            sOut += '</table>';
 
-                return sOut;
-            }
-             $(document).ready(function () {
-              
+            return sOut;
+        }
+        $(document).ready(function () {
 
-                /*
-                 * Initialse DataTables, with no sorting on the 'details' column
-                 */
-                var oTable = $('#hidden-table-info').dataTable({
-                    "aoColumnDefs": [{
-                        "bSortable": false,
-                        "aTargets": [0]
-                    }],
-                    "aaSorting": [
-                        [1, 'asc']
-                    ]
-                });
 
-                
+            /*
+             * Initialse DataTables, with no sorting on the 'details' column
+             */
+            var oTable = $('#hidden-table-info').dataTable({
+                "aoColumnDefs": [{
+                    "bSortable": false,
+                    "aTargets": [0]
+                }],
+                "aaSorting": [
+                    [1, 'asc']
+                ]
             });
-         
+
+
+        });
+
     </script>
+    <script src="https://cdn.cai.tools.sap/webchat/webchat.js"
+            channelId="f4e23943-eabb-4dea-af9f-7e4a6fa7d036"
+            token="c87f2b8458fdb3f51d92c3d04a2356dc"
+            id="cai-webchat"></script>
 
 </body>
 
